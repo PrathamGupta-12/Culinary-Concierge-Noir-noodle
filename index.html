@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10110f">
+
+    <title>NOIR & NOODLE | Digital Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="noise-layer"></div>
+
+    <!-- Announcement bar -->
+    <div class="announcement">
+        <span class="announcement-dot"></span>
+        FRESHLY PREPARED · ALWAYS DELICIOUS
+        <span class="announcement-dot"></span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <a href="#home" class="brand">
+            <span class="brand-icon">N<span>.</span></span>
+
+            <span class="brand-text">
+                <strong>NOIR <i>&</i> NOODLE</strong>
+                <small>THE ART OF GOOD FOOD</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#menu" class="nav-link">Explore Menu</a>
+            <a href="#signature" class="nav-link">Our Favourites</a>
+            <a href="#story" class="nav-link">Our Story</a>
+        </nav>
+
+        <a href="#visit" class="header-button">
+            Visit Us <span>↗</span>
+        </a>
+
+    </header>
+
+
+    <main id="home">
+
+        <!-- Hero section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span></span>
+                    GOOD TASTE STARTS HERE
+                </div>
+
+                <h1>
+                    A little bold.<br>
+                    A little <em>beautiful.</em><br>
+                    Always delicious.
+                </h1>
+
+                <p class="hero-description">
+                    From comforting classics to flavours that surprise.
+                    Discover something worth slowing down for.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="primary-button">
+                        Explore our menu <span>↘</span>
+                    </a>
+
+                    <a href="#signature" class="secondary-link">
+                        Discover favourites →
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="stars">★★★★★</span>
+                    <span>Made fresh. Served with feeling.</span>
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-ring ring-one"></div>
+                <div class="hero-ring ring-two"></div>
+
+                <div class="hero-image hero-image-back">
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?w=900&q=85"
+                        alt="Freshly prepared food"
+                    >
+                </div>
+
+                <div class="hero-image hero-image-front">
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=900&q=85"
+                        alt="Delicious freshly baked pizza"
+                    >
+                </div>
+
+                <div class="hero-stamp">
+                    <span>GOOD FOOD</span>
+                    <strong>GOOD<br>MOOD</strong>
+                    <span>EST. 2024</span>
+                </div>
+
+                <div class="floating-note">
+                    <span class="note-icon">✳</span>
+
+                    <span>
+                        <strong>Made with intention</strong>
+                        <small>Every plate, every time.</small>
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Decorative marquee -->
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>FRESH FLAVOURS</span>
+                <b>✳</b>
+                <span>HAPPY PLATES</span>
+                <b>✳</b>
+                <span>GOOD COMPANY</span>
+                <b>✳</b>
+                <span>FRESH FLAVOURS</span>
+                <b>✳</b>
+                <span>HAPPY PLATES</span>
+                <b>✳</b>
+                <span>GOOD COMPANY</span>
+                <b>✳</b>
+            </div>
+        </div>
+
+
+        <!-- Dynamic categories -->
+        <section class="section menu-section" id="menu">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        <span></span>
+                        FIND YOUR FAVOURITE
+                    </div>
+
+                    <h2>What are you <em>craving?</em></h2>
+
+                    <p>
+                        Explore our collection of flavours,
+                        carefully prepared for you.
+                    </p>
+                </div>
+
+                <div class="heading-note">
+                    MADE FOR EVERY MOOD <span>✳</span>
+                </div>
+
+            </div>
+
+            <div class="category-grid" id="categoryContainer">
+
+                <div class="loading-state">
+                    <span class="loading-spinner"></span>
+                    <p id="loading_message">Preparing something delicious...</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dynamic top-rated dishes -->
+        <section class="section signature-section" id="signature">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        <span></span>
+                        THE CROWD HAS SPOKEN
+                    </div>
+
+                    <h2>Most-loved <em>plates.</em></h2>
+
+                    <p>
+                        The dishes people come back for,
+                        again and again.
+                    </p>
+                </div>
+
+                <span class="heading-note">
+                    CUSTOMER FAVOURITES ✳
+                </span>
+
+            </div>
+
+            <div class="signature-grid" id="signatureContainer">
+
+                <div class="loading-state">
+                    <span class="loading-spinner"></span>
+                    <p>Finding our customer favourites...</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Restaurant story -->
+        <section class="story-section" id="story">
+
+            <div class="story-image">
+                <img
+                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85"
+                    alt="Beautifully arranged restaurant table"
+                >
+            </div>
+
+            <div class="story-content">
+
+                <div class="eyebrow">
+                    <span></span>
+                    A SEAT AT OUR TABLE
+                </div>
+
+                <h2>
+                    Food tastes better<br>
+                    when there's a <em>story.</em>
+                </h2>
+
+                <p>
+                    We believe the best meals aren't rushed.
+                    They're shared, savoured and remembered.
+                    Take your time, explore the menu and
+                    discover your next favourite.
+                </p>
+
+                <span class="story-signature">
+                    With love, the NOIR team ✳
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Visit section -->
+        <section class="visit-section" id="visit">
+
+            <div>
+                <div class="eyebrow">
+                    <span></span>
+                    YOUR TABLE IS WAITING
+                </div>
+
+                <h2>
+                    Come hungry.<br>
+                    <em>Leave happy.</em>
+                </h2>
+            </div>
+
+            <div class="visit-details">
+
+                <p>
+                    Good food is even better in good company.
+                    Drop by and let us take care of the rest.
+                </p>
+
+                <div class="visit-info">
+                    <span>
+                        MON – SUN
+                        <strong>11:00 AM – 11:00 PM</strong>
+                    </span>
+
+                    <span>
+                        FIND US
+                        <strong>Kanpur City · Near Swaroop Nagar</strong>
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <a href="#home" class="brand footer-brand">
+            <span class="brand-icon">N<span>.</span></span>
+
+            <span class="brand-text">
+                <strong>NOIR <i>&</i> NOODLE</strong>
+                <small>THE ART OF GOOD FOOD</small>
+            </span>
+        </a>
+
+        <p>Good food. Good people. Good memories.</p>
+
+        <span class="copyright">
+            © 2026 NOIR & NOODLE
+        </span>
+
+    </footer>
+
+
+    <!-- =========================================
+         MODAL 1: CATEGORY MENU
+    ========================================== -->
+
+    <div class="modal" id="categoryModal">
+
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-panel category-modal-panel">
+
+            <div class="modal-header">
+
+                <div>
+                    <div class="eyebrow">
+                        <span></span>
+                        EXPLORE THE COLLECTION
+                    </div>
+
+                    <h2 id="modalCategoryTitle">
+                        Category <em id="categoryTitle">name</em>
+                    </h2>
+
+                    <p id="modalCategoryDescription">
+                        Discover something delicious.
+                    </p>
+                </div>
+
+                <button
+                    id="modalCloseButton"
+                    class="close-button"
+                    type="button"
+                    data-close-modal
+                    aria-label="Close category menu"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- Search, sort and filter controls -->
+            <div class="menu-toolbar">
+
+                <div class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        id="menuSearch"
+                        placeholder="Search dishes..."
+                    >
+                </div>
+
+                <div class="toolbar-actions">
+
+                    <select id="sortSelect" aria-label="Sort dishes">
+                        <option value="default">Recommended</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+
+                    <button
+                        id="filterButton"
+                        class="filter-button"
+                        type="button"
+                        data-open-modal="filterModal"
+                    >
+                        ☷ Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Optional active filter indicators -->
+            <div class="active-filters" id="activeFilters"></div>
+
+
+            <!-- JavaScript inserts the selected category's dishes here -->
+            <div class="menu-items-grid" id="menuItemsContainer">
+
+                <div class="loading-state">
+                    <span class="loading-spinner"></span>
+                    <p>Loading dishes...</p>
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+                <span id="menuResultCount">Explore our menu</span>
+                <span>PREPARED FRESH ✳</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MODAL 2: FILTERS
+    ========================================== -->
+
+    <div class="modal" id="filterModal">
+
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-panel filter-modal-panel">
+
+            <div class="modal-header">
+
+                <div>
+                    <div class="eyebrow">
+                        <span></span>
+                        PERSONALISE YOUR MENU
+                    </div>
+
+                    <h2>Find your <em>perfect bite.</em></h2>
+                </div>
+
+                <button
+                    id="filterModalCloseBtn"
+                    class="close-button"
+                    type="button"
+                    data-close-modal
+                    aria-label="Close filters"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <h3>Dietary preference</h3>
+
+                <label class="filter-option">
+                    <input type="checkbox" id="filterVeg" value="veg">
+                    <span class="custom-check"></span>
+                    Vegetarian
+                </label>
+
+                <label class="filter-option">
+                    <input type="checkbox" id="filterNonVeg" value="non-veg">
+                    <span class="custom-check"></span>
+                    Non-vegetarian
+                </label>
+
+                <label class="filter-option">
+                    <input type="checkbox" id="filterVegan" value="vegan">
+                    <span class="custom-check"></span>
+                    Vegan
+                </label>
+
+            </div>
+
+
+            <div class="filter-divider"></div>
+
+
+            <div class="filter-group">
+
+                <h3>Price range</h3>
+
+                <div class="price-inputs">
+
+                    <label>
+                        <span>Minimum price</span>
+                        <input
+                            type="number"
+                            id="minPrice"
+                            min="0"
+                            placeholder="₹ 0"
+                        >
+                    </label>
+
+                    <label>
+                        <span>Maximum price</span>
+                        <input
+                            type="number"
+                            id="maxPrice"
+                            min="0"
+                            placeholder="₹ 1000"
+                        >
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="filter-actions">
+
+                <button
+                    type="button"
+                    class="clear-button"
+                    id="clearFilters"
+                >
+                    Clear all
+                </button>
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    id="applyFilters"
+                >
+                    Apply filters <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================================
+            MODAL 3: DISH DETAILS
+    ========================================== -->
+
+    <div class="modal" id="dishDetailModal">
+
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-panel dish-detail-panel">
+
+            <div class="modal-header">
+
+                <div>
+                    <div class="eyebrow">
+                        <span></span>
+                        CULINARY SPECIFICATION
+                    </div>
+
+                    <h2 id="detailDishName">Dish Name</h2>
+                    <p id="detailDishCategory" style="color: var(--muted); font-size: 11px; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px;">Category</p>
+                </div>
+
+                <button
+                    id="detailModalCancelBtn"
+                    class="close-button"
+                    type="button"
+                    data-close-modal
+                    aria-label="Close dish details"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <div class="dish-detail-body">
+
+                <!-- Meta Badges: Rating, Availability, Dietary -->
+                <div class="dish-detail-badges">
+                    <span class="diet-badge veg" id="detailDietBadge">Vegetarian</span>
+                    <span class="availability-badge available" id="detailAvailabilityBadge">Available</span>
+                    <span class="dish-rating" id="detailRating">★ 4.90 <small id="detailReviewCount">(120+ reviews)</small></span>
+                </div>
+
+                <!-- Description -->
+                <p class="dish-detail-description" id="detailDescription">
+                    Slow-cooked culinary masterpiece crafted with fresh ingredients, balanced aromatic herbs, and traditional spices.
+                </p>
+
+                <!-- Specs Grid (Prep Time & Spice Level) -->
+                <div class="dish-specs-grid">
+
+                    <div class="spec-card">
+                        <span class="spec-label">PREPARATION TIME</span>
+                        <strong id="detailPrepTime">20 – 25 mins</strong>
+                    </div>
+
+                    <div class="spec-card">
+                        <span class="spec-label">SPICE LEVEL</span>
+                        <strong id="detailSpiceLevel">Medium 🌶️</strong>
+                    </div>
+
+                </div>
+
+                <!-- Footer Row: Price & Action -->
+                <div class="dish-detail-footer">
+                    <div>
+                        <small style="color: var(--muted); font-size: 9px; letter-spacing: 1px; display: block; margin-bottom: 3px;">PRICE</small>
+                        <span class="dish-detail-price" id="detailPrice">₹450</span>
+                    </div>
+
+                    <button
+                        id="detailModalCloseBtn"
+                        type="button"
+                        class="primary-button"
+                        data-close-modal
+                    >
+                        Back to Menu <span>→</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
